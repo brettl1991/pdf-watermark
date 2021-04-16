@@ -4,3 +4,6 @@ import PyPDF2
 template = PyPDF2.PdfFileReader(open('super.pdf', 'rb'))
 watermark = PyPDF2.PdfFileReader(open('wtr.pdf', 'rb'))
 
+#write my output and combine the above files
+output = PyPDF2.PdfFileWriter()
+
