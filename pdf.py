@@ -9,4 +9,4 @@ output = PyPDF2.PdfFileWriter()
 
 for i in range(template.getNumPages()):
   page = template.getPage(i)
-  
+  page.mergePage(watermark.getPage(0))
